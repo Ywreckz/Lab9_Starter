@@ -107,11 +107,6 @@
       });
     });
   
-    window.onerror = function (message, source, lineno) {
-      console.log(`[window.onerror] message="${message}" source="${source}" line=${lineno}`);
-      return true;
-    };
-  
     // ─── Step 4: Custom Error class ─────────────────────────────────────────
     class DivisionByZeroError extends Error {
       constructor(message) {
